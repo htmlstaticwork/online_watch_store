@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #c0a068; /* Luxury Gold */
+    --secondary: #1a1a1a;
+    --accent: #d4af37;
+    --bg-light: #f9f9f9;
+    --bg-dark: #0f0f0f;
+    --text-light: #333;
+    --text-dark: #eee;
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Themes */
+body {
+    transition: var(--transition);
+    overflow-x: hidden;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.dark body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.dark .container h1, 
+.dark .container h2, 
+.dark .container h3, 
+.dark .container h4, 
+.dark .container h5, 
+.dark .container h6 {
+    color: var(--text-dark);
+}
+
+/* Fix for dark-background sections in light mode */
+.bg-secondary, .bg-secondary-fixed {
+    background-color: var(--secondary) !important;
+    color: white !important;
+}
+
+.bg-secondary h1, .bg-secondary h2, .bg-secondary h3, .bg-secondary h4, .bg-secondary-fixed h1 {
+    color: white !important;
+}
+
+.bg-secondary p, .bg-secondary-fixed p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    text-align: right;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-up {
+    transform: scale(0.95);
+    transition: var(--transition);
+}
+
+.scale-up:hover {
+    transform: scale(1);
+}
+
+.card-hover {
+    transition: var(--transition);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Luxury Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Header Styling */
+header {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.dark header {
+    background: rgba(15, 15, 15, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.light header {
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--secondary);
+}
+
+header.sticky {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dark header.sticky {
+    background: rgba(15, 15, 15, 0.95) !important;
+}
+
+.light header.sticky {
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Ensure nav items inherit color correctly */
+header nav {
+    color: inherit;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+    color: var(--primary) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transition: var(--transition);
+}
+
+.nav-link.active::after, .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Button Premium */
+.btn-premium {
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.btn-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn-premium:hover::before {
+    left: 100%;
+}
+
+/* Cart Drawer Animation */
+#cart-drawer {
+    transform: translateX(100%);
+    transition: var(--transition);
+}
+
+#cart-drawer.open {
+    transform: translateX(0);
+}
+
+[dir="rtl"] #cart-drawer {
+    transform: translateX(-100%);
+}
+
+[dir="rtl"] #cart-drawer.open {
+    transform: translateX(0);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary);
+    color: white;
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Toast Notification */
+#cart-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+#cart-toast.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* RTL Layout Fixes */
+[dir="rtl"] .ml-auto { margin-right: auto; margin-left: 0; }
+[dir="rtl"] .mr-2 { margin-left: 0.5rem; margin-right: 0; }
+[dir="rtl"] .cart-badge { left: -5px; right: auto; }
+
+/* Image Zoom */
+.img-zoom {
+    overflow: hidden;
+}
+
+.img-zoom img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Scroll to Top */
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 50;
+}
+
+#scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transform: translateX(100%);
+    transition: var(--transition);
+}
+
+#mobile-menu.open {
+    transform: translateX(0);
+}
+
+[dir="rtl"] #mobile-menu {
+    transform: translateX(-100%);
+}
+
+[dir="rtl"] #mobile-menu.open {
+    transform: translateX(0);
+}

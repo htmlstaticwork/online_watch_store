@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ChronoX Horology</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { primary: '#c0a068', secondary: '#1a1a1a', accent: '#d4af37' }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-[100] transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center transition-all duration-300">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <img src="images/logo.png" alt="ChronoX Logo" class="h-10 w-auto object-contain">
+                <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
+            </a>
+            <div class="hidden xl:flex items-center space-x-8">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home-2.html" class="nav-link">Home 2</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hidden xl:flex items-center space-x-6">
+                <button id="rtl-toggle" class="hover:text-primary transition-colors text-sm uppercase font-bold">RTL</button>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-white/10 transition-colors"></button>
+                <button id="cart-toggle" class="p-2 rounded-full hover:bg-white/10 transition-colors relative">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    <span id="cart-count" class="cart-badge">0</span>
+                </button>
+                <a href="login.html" class="px-6 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
+            </div>
+            <button id="mobile-menu-btn" class="xl:hidden p-2 text-primary">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[110] bg-secondary flex flex-col p-8 xl:hidden">
+        <div class="flex justify-between items-center mb-12 text-white">
+            <span class="text-2xl font-bold text-primary">CHRONOX</span>
+            <button id="mobile-menu-close" class="p-2 text-primary">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="flex flex-col space-y-6 text-xl text-white">
+            <a href="index.html">Home 1</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Section 1: The Concierge Vision (Fixed with Image) -->
+    <section class="h-[60vh] relative flex items-center overflow-hidden border-b border-white/5">
+        <div class="absolute inset-0 z-0">
+            <img src="images/contact-hero.png" alt="Showroom Hero" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080808] to-transparent h-40 bottom-0 top-auto"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent h-60"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 pt-32">
+            <div class="max-w-2xl fade-in text-center mx-auto text-white">
+                <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">Personal Support</span>
+                <h1 class="text-6xl md:text-7xl font-bold mb-6 tracking-tighter uppercase leading-none">AT YOUR <span class="text-primary italic">SERVICE.</span></h1>
+                <p class="text-lg opacity-60 leading-relaxed font-light">Whether you're seeking your first mechanical piece or expanding a legacy collection, our horologists are here to guide your journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Global Access Network -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-white">
+                <div class="p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 fade-in">
+                    <h4 class="text-primary font-bold uppercase tracking-widest text-[10px] mb-4 group-hover:text-white">Our Atelier</h4>
+                    <p class="text-sm opacity-60 leading-relaxed mb-8 font-light group-hover:text-white/80">127 Shoreditch High St<br>London, E1 6JE<br>United Kingdom</p>
+                    <a href="tel:+442079460958" class="text-[10px] font-bold border-b border-primary pb-1 group-hover:border-white">+44 20 7946 0958</a>
+                </div>
+                <div class="p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 fade-in" style="transition-delay: 0.1s;">
+                    <h4 class="text-primary font-bold uppercase tracking-widest text-[10px] mb-4 group-hover:text-white">Electronic Support</h4>
+                    <p class="text-sm opacity-60 leading-relaxed mb-8 font-light group-hover:text-white/80">Direct access to our concierge team for technical inquiries and custom orders.</p>
+                    <a href="mailto:concierge@chronox.com" class="text-[10px] font-bold border-b border-primary pb-1 group-hover:border-white">concierge@chronox.com</a>
+                </div>
+                <div class="p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 fade-in" style="transition-delay: 0.2s;">
+                    <h4 class="text-primary font-bold uppercase tracking-widest text-[10px] mb-4 group-hover:text-white">Brand Partnerships</h4>
+                    <p class="text-sm opacity-60 leading-relaxed mb-8 font-light group-hover:text-white/80">Interested in joining our platform? Submit your independent brand for evaluation.</p>
+                    <a href="mailto:partners@chronox.com" class="text-[10px] font-bold border-b border-primary pb-1 group-hover:border-white">partners@chronox.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Acquisition Protocol -->
+    <section class="py-24 border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-20 text-white">
+                <div class="w-full md:w-1/3 fade-in">
+                    <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-6">Connect</h2>
+                    <h3 class="text-4xl font-bold tracking-tighter uppercase leading-tight">LEAVE A <br>MECHANICAL <br>TRACE.</h3>
+                    <p class="mt-8 opacity-40 text-xs leading-relaxed max-w-[200px]">We respond to all verified collector inquiries within 24 business hours.</p>
+                </div>
+                <div class="w-full md:w-2/3 fade-in">
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="flex flex-col gap-3">
+                            <label class="text-[10px] uppercase tracking-widest font-bold opacity-40">Your Designation</label>
+                            <input type="text" placeholder="Full Name" required class="bg-white/5 border border-white/10 px-6 py-5 focus:border-primary focus:outline-none text-xs font-light tracking-widest">
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <label class="text-[10px] uppercase tracking-widest font-bold opacity-40">Digital Address</label>
+                            <input type="email" placeholder="Email" required class="bg-white/5 border border-white/10 px-6 py-5 focus:border-primary focus:outline-none text-xs font-light tracking-widest">
+                        </div>
+                        <div class="flex flex-col gap-3 md:col-span-2">
+                            <label class="text-[10px] uppercase tracking-widest font-bold opacity-40">Message Intent</label>
+                            <textarea rows="5" placeholder="How can we assist your collection?" required class="bg-white/5 border border-white/10 px-6 py-5 focus:border-primary focus:outline-none text-xs font-light tracking-widest resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white py-6 px-12 font-bold uppercase tracking-[0.3em] text-[10px] md:w-fit hover:bg-accent transition-all shadow-2xl">Transmit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Map: Strategic Presence -->
+    <section class="h-[500px] w-full border-b border-white/5 relative bg-secondary overflow-hidden">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.261805908906!2d-0.0789!3d51.524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb78f3d611b%3A0xe54c1e403487372b!2s127%20Shoreditch%20High%20St%2C%20London%20E1%206JE%2C%20UK!5e0!3m2!1sen!2sus!4v1712121753456!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="absolute bottom-10 right-10 bg-secondary/80 backdrop-blur-xl border border-white/10 p-8 fade-in text-white shadow-2xl">
+            <h4 class="text-primary font-bold uppercase tracking-widest text-[10px] mb-4">Tactile Experience</h4>
+            <p class="text-xs opacity-60 leading-relaxed max-w-[200px] font-light">Join us in London for individual consultations and tactile evaluation of our entire catalog.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Member Consultation -->
+    <section class="py-24 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center fade-in">
+            <span class="text-[10px] font-bold uppercase tracking-[0.6em] mb-4 block opacity-80">Private Gallery</span>
+            <h3 class="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter leading-none">BESPOKE <span class="italic text-white">CURATION.</span></h3>
+            <p class="text-lg opacity-90 max-w-2xl mx-auto mb-12 font-light italic leading-relaxed">"We offer private, one-on-one virtual consultations for serious collectors looking to source rare, independent pieces that are no longer in standard production."</p>
+            <a href="#" class="px-12 py-6 border-2 border-white font-bold uppercase tracking-widest text-[10px] hover:bg-white hover:text-primary transition-all">Schedule private session</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-20 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="fade-in">
+                    <a href="index.html" class="text-2xl font-bold text-primary mb-8 block">CHRONOX</a>
+                    <p class="opacity-60 mb-8 leading-relaxed">
+                        ChronoX is a curated marketplace for the world's most exceptional microbrand watches. Luxury within reach.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="p-2 bg-white/5 rounded-full hover:bg-primary transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="p-2 bg-white/5 rounded-full hover:bg-primary transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="p-2 bg-white/5 rounded-full hover:bg-primary transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.377.505 9.377.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="fade-in" style="transition-delay: 0.1s;">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-8 text-primary">Quick Links</h4>
+                    <ul class="space-y-4 text-sm opacity-60">
+                        <li><a href="index.html" class="hover:text-primary transition-all">Home</a></li>
+                        <li><a href="shop.html" class="hover:text-primary transition-all">Collections</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-all">Our Story</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition-all">Journal</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-all">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="fade-in" style="transition-delay: 0.2s;">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-8 text-primary">Collections</h4>
+                    <ul class="space-y-4 text-sm opacity-60">
+                        <li><a href="#" class="hover:text-primary transition-all">Dive Watches</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">GMT Masters</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Dress Watches</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Limited Editions</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="fade-in" style="transition-delay: 0.3s;">
+                    <h4 class="text-sm font-bold uppercase tracking-widest mb-8 text-primary">Join the Circle</h4>
+                    <p class="text-sm opacity-60 mb-6">Stay updated with our latest microbrand releases.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Address" required class="bg-white/5 border border-white/10 px-6 py-4 w-full text-sm focus:outline-none focus:border-primary transition-all rounded-l">
+                        <button type="submit" class="bg-primary px-6 py-4 text-white hover:bg-accent transition-all rounded-r">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-40 text-xs tracking-widest uppercase">
+                <p>&copy; 2026 ChronoX Horology. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-primary transition-all">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary transition-all">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-to-top" class="bg-primary p-4 rounded-full text-white shadow-2xl hover:scale-110 transition-all">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="fixed top-0 right-0 h-screen w-full md:w-[450px] bg-secondary z-[100] p-10 flex flex-col shadow-2xl">
+        <div class="flex justify-between items-center mb-12">
+            <h3 class="text-2xl font-bold tracking-tighter uppercase">My <span class="text-primary italic">Collection</span></h3>
+            <button id="cart-close" class="p-2 text-primary hover:rotate-90 transition-all">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div id="cart-items-list" class="flex-1 overflow-y-auto pr-4"></div>
+        <div class="border-t border-white/5 pt-10 mt-10">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-[10px] uppercase tracking-[0.4em] font-bold opacity-40">Total Value</span>
+                <span id="cart-total" class="text-2xl font-bold tracking-tighter text-primary">$0.00</span>
+            </div>
+            <button class="btn-premium w-full bg-primary text-white py-6 font-bold uppercase tracking-[0.4em] text-xs shadow-xl">Complete Acquisition</button>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="cart-toast" class="cart-toast">Item added to collection</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
