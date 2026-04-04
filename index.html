@@ -40,9 +40,9 @@
             <!-- Desktop Nav -->
             <div class="hidden xl:flex items-center gap-8">
                 <a href="index.html" class="nav-link active">Home 1</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="home-2.html" class="nav-link">Home 2</a>
                 <a href="shop.html" class="nav-link">Shop</a>
-                <a href="about.html" class="nav-link">About</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
@@ -89,9 +89,9 @@
         </div>
         <div class="flex flex-col space-y-4 text-xl text-white">
             <a href="index.html" class="text-primary font-bold">Home 1</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About</a>
             <a href="home-2.html" class="hover:text-primary transition-colors">Home 2</a>
             <a href="shop.html" class="hover:text-primary transition-colors">Shop</a>
-            <a href="about.html" class="hover:text-primary transition-colors">About</a>
             <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
             <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
         </div>
@@ -99,6 +99,7 @@
             <div class="flex items-center space-x-6 text-white mb-6">
                 <button id="rtl-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
                 <button id="theme-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
+                <button id="cart-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Cart</button>
             </div>
             <a href="login.html" class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
         </div>
@@ -111,11 +112,11 @@
             <div class="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent h-60"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10 dark:text-white pt-32 text-center">
+        <div class="container mx-auto px-6 relative z-10 text-white pt-32 text-center">
             <div class="max-w-3xl mx-auto fade-in">
                 <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter uppercase leading-tight italic">THE
                     FUTURE OF <br><span class="text-primary not-italic">TIME.</span></h1>
-                <p class="text-lg md:text-xl mb-12 opacity-80 dark:opacity-60 leading-relaxed max-w-xl mx-auto font-light">
+                <p class="text-lg md:text-xl mb-12 opacity-90 leading-relaxed max-w-xl mx-auto font-light">
                     Welcome to ChronoX. We bridge the gap between traditional Swiss precision and the innovative soul of
                     the modern microbrand revolution.
                 </p>
@@ -134,17 +135,17 @@
     <!-- Section 2: Artisanal Best Sellers -->
     <section class="py-24 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 fade-in text-center md:text-left text-white">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 fade-in text-center md:text-left text-black dark:text-white">
                 <div>
                     <h2 class="text-sm uppercase tracking-[0.3em] text-primary mb-4">Curated Artisans</h2>
-                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-white">The Best Sellers</h3>
+                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight">The Best Sellers</h3>
                 </div>
                 <a href="shop.html"
-                    class="mt-8 md:mt-0 text-primary border-b border-primary py-2 font-bold uppercase tracking-widest text-xs hover:text-white hover:border-white transition-all duration-300">View
+                    class="mt-8 md:mt-0 text-primary border-b border-primary py-2 font-bold uppercase tracking-widest text-xs hover:text-black dark:hover:text-white hover:border-black dark:hover:border-white transition-all duration-300">View
                     Entire Atelier</a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 dark:text-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div class="group card-hover fade-in">
                     <div class="img-zoom relative bg-white/5 aspect-[4/5] overflow-hidden mb-6">
                         <img src="https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg" alt="W1"
@@ -157,7 +158,7 @@
                                 data-image="images/products.png">Acquire</button>
                         </div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center text-black dark:text-white">
                         <h4 class="text-xl font-bold mb-2 uppercase tracking-tighter">Deep Sea Voyager</h4>
                         <p class="text-primary font-bold mb-4">$1,250.00</p>
                     </div>
@@ -256,9 +257,9 @@
     <!-- Section 3: Engineering Core (Enhanced Card Layout) -->
     <section class="py-24 border-y border-white/5 bg-secondary-fixed">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-20 fade-in">
+            <div class="text-center mb-20 fade-in text-black dark:text-white">
                 <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-4">Core Principles</h2>
-                <h3 class="text-5xl font-bold tracking-tighter text-white">ENGINEERED FOR PERFECTION</h3>
+                <h3 class="text-5xl font-bold tracking-tighter">ENGINEERED FOR PERFECTION</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -267,7 +268,7 @@
                     <img src="https://images.pexels.com/photos/29268644/pexels-photo-29268644.jpeg" alt="Calibration"
                         class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                    <div class="absolute bottom-0 left-0 p-10 text-white z-10">
                         <span class="text-primary text-2xl font-light italic block mb-4">P1.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Calibration</h4>
                         <p class="opacity-90 text-xs leading-relaxed max-w-xs">Every movement is individually calibrated
@@ -281,7 +282,7 @@
                     <img src="https://images.pexels.com/photos/35989303/pexels-photo-35989303.jpeg" alt="Resilience"
                         class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                    <div class="absolute bottom-0 left-0 p-10 text-white z-10">
                         <span class="text-primary text-2xl font-light italic block mb-4">P2.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Resilience</h4>
                         <p class="opacity-90 text-xs leading-relaxed max-w-xs">Aerospatial-grade materials (Grade 5
@@ -296,7 +297,7 @@
                         class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                         style="object-position: center bottom;">
                     <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-10 text-white">
+                    <div class="absolute bottom-0 left-0 p-10 text-white z-10">
                         <span class="text-primary text-2xl font-light italic block mb-4">P3.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Visibility</h4>
                         <p class="opacity-90 text-xs leading-relaxed max-w-xs">Dual-layered high-grade Swiss
@@ -359,11 +360,11 @@
                 <div class="w-full lg:w-1/2 fade-in">
                     <img src="images/hero.png" alt="Ethos" class="w-full grayscale border border-white/5 shadow-2xl">
                 </div>
-                <div class="w-full lg:w-1/2 fade-in dark:text-white text-center lg:text-left mt-12 lg:mt-0">
+                <div class="w-full lg:w-1/2 fade-in text-center lg:text-left mt-12 lg:mt-0">
                     <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-6">Our DNA</h2>
                     <h3 class="text-4xl md:text-5xl font-bold mb-8 tracking-tighter leading-tight">THE ART OF
                         INDEPENDENT <span class="text-primary">THINKING.</span></h3>
-                    <p class="text-lg opacity-60 dark:opacity-60 leading-relaxed mb-10 mx-auto lg:mx-0 max-w-xl">
+                    <p class="text-lg opacity-70 leading-relaxed mb-10 mx-auto lg:mx-0 max-w-xl">
                         ChronoX represents a community of thinkers who value architectural design over branding. We
                         partner with the boldest makers to ensure that your wrist tells a story that is uniquely yours.
                     </p>
@@ -385,9 +386,9 @@
     <!-- Section 5: The Circle of Trust -->
     <section class="py-24 bg-white/5">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
+            <div class="text-center mb-16 fade-in text-black dark:text-white">
                 <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-4">Collector Voice</h2>
-                <h3 class="text-4xl font-bold tracking-tight dark:text-white">THE CIRCLE OF TRUST</h3>
+                <h3 class="text-4xl font-bold tracking-tight">THE CIRCLE OF TRUST</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 dark:text-white">
                 <div class="p-12 border border-black/5 dark:border-white/5 bg-secondary-fixed text-white fade-in">
@@ -395,7 +396,7 @@
                         deeply as ChronoX does was a game changer for my collection."</p>
                     <div class="flex items-center space-x-4">
                         <div class="w-10 h-px bg-primary"></div>
-                        <span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40">Leo Thorne, Watch
+                        <span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-80">Leo Thorne, Watch
                             Critic</span>
                     </div>
                 </div>
@@ -423,7 +424,7 @@
                         <img src="images/logo.png" alt="ChronoX Logo" class="h-10 w-auto object-contain">
                         <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
                     </a>
-                    <p class="opacity-60 mb-8 leading-relaxed">
+                    <p class="opacity-80 mb-8 leading-relaxed">
                         ChronoX is a curated marketplace for the world's most exceptional microbrand watches. Luxury
                         within reach.
                     </p>
@@ -452,7 +453,7 @@
                 <!-- Quick Links -->
                 <div class="fade-in" style="transition-delay: 0.1s;">
                     <h4 class="text-sm font-bold uppercase tracking-widest mb-8 text-primary">Quick Links</h4>
-                    <ul class="space-y-4 text-sm opacity-60">
+                    <ul class="space-y-4 text-sm opacity-80">
                         <li><a href="index.html" class="hover:text-primary transition-all">Home</a></li>
                         <li><a href="shop.html" class="hover:text-primary transition-all">Collections</a></li>
                         <li><a href="about.html" class="hover:text-primary transition-all">Our Story</a></li>
@@ -464,7 +465,7 @@
                 <!-- Categories -->
                 <div class="fade-in" style="transition-delay: 0.2s;">
                     <h4 class="text-sm font-bold uppercase tracking-widest mb-8 text-primary">Collections</h4>
-                    <ul class="space-y-4 text-sm opacity-60">
+                    <ul class="space-y-4 text-sm opacity-80">
                         <li><a href="#" class="hover:text-primary transition-all">Dive Watches</a></li>
                         <li><a href="#" class="hover:text-primary transition-all">GMT Masters</a></li>
                         <li><a href="#" class="hover:text-primary transition-all">Dress Watches</a></li>
@@ -493,7 +494,7 @@
 
             <!-- Bottom Footer -->
             <div
-                class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-40 text-xs tracking-widest uppercase">
+                class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-70 text-xs tracking-widest uppercase">
                 <p>&copy; 2026 ChronoX Horology. All Rights Reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="hover:text-primary transition-all">Privacy Policy</a>

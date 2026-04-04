@@ -32,9 +32,9 @@
             </a>
             <div class="hidden xl:flex items-center space-x-8">
                 <a href="index.html" class="nav-link">Home 1</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="home-2.html" class="nav-link">Home 2</a>
                 <a href="shop.html" class="nav-link">Shop</a>
-                <a href="about.html" class="nav-link">About</a>
                 <a href="blog.html" class="nav-link active">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
@@ -77,9 +77,9 @@
         </div>
         <div class="flex flex-col space-y-6 text-xl text-white">
             <a href="index.html" class="hover:text-primary transition-colors">Home 1</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About</a>
             <a href="home-2.html" class="hover:text-primary transition-colors">Home 2</a>
             <a href="shop.html" class="hover:text-primary transition-colors">Shop</a>
-            <a href="about.html" class="hover:text-primary transition-colors">About</a>
             <a href="blog.html" class="text-primary font-bold">Blog</a>
             <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
         </div>
@@ -89,6 +89,8 @@
                     class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
                 <button id="theme-toggle-mobile"
                     class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
+                <button id="cart-toggle-mobile"
+                    class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Cart</button>
             </div>
             <a href="login.html"
                 class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
@@ -108,7 +110,7 @@
                 <h1 class="text-4xl md:text-7xl font-bold mb-8 tracking-tighter uppercase leading-[1.1]">The Art of
                     <br><span class="text-primary italic text-3xl md:text-6xl">Finishing.</span>
                 </h1>
-                <p class="text-base md:text-lg opacity-60 leading-relaxed max-w-xl mx-auto mb-12 font-light">
+                <p class="text-base md:text-lg opacity-90 leading-relaxed max-w-xl mx-auto mb-12 font-light">
                     Exploring the microscopic world of hand-brushed steel and the artisans who dedicate years to
                     mastering a single bevel in the modern age of horology.
                 </p>
@@ -133,7 +135,7 @@
                     <h4
                         class="text-xl font-bold mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors">
                         Titanium: The Modern Chassis</h4>
-                    <p class="opacity-50 text-xs leading-relaxed mb-6 font-light">Why grade 5 titanium is replacing 316L
+                    <p class="opacity-80 text-xs leading-relaxed mb-6 font-light">Why grade 5 titanium is replacing 316L
                         steel as the preferred material for independent tool watches that demand both weight reduction
                         and resilience.</p>
                     <a href="#"
@@ -150,14 +152,14 @@
                     <h4
                         class="text-xl font-bold mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors">
                         The Japanese Heartbeat</h4>
-                    <p class="opacity-50 text-xs leading-relaxed mb-6 font-light">Understanding the Miyota 9015 and NH35
+                    <p class="opacity-80 text-xs leading-relaxed mb-6 font-light">Understanding the Miyota 9015 and NH35
                         movements—the workhorses that empowered the microbrand revolution and democratized luxury
                         precision.</p>
                     <a href="#"
                         class="text-[10px] uppercase tracking-widest font-bold border-b border-white/20 pb-1 hover:text-primary transition-all">Continue
                         Reading</a>
                 </article>
-                <article class="fade-in group" style="transition-delay: 0.2s;">
+                <article class="fade-in group md:col-span-2 lg:col-span-1 md:max-w-md md:mx-auto lg:mx-0" style="transition-delay: 0.2s;">
                     <div class="img-zoom relative aspect-video overflow-hidden mb-6 bg-white/5">
                         <img src="https://images.pexels.com/photos/33168866/pexels-photo-33168866.jpeg" alt="B3"
                             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-transform duration-700 group-hover:scale-110">
@@ -167,7 +169,7 @@
                     <h4
                         class="text-xl font-bold mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors">
                         The Neo-Vintage Wave</h4>
-                    <p class="opacity-50 text-xs leading-relaxed mb-6 font-light">Analyzing why 1960s diver aesthetics
+                    <p class="opacity-80 text-xs leading-relaxed mb-6 font-light">Analyzing why 1960s diver aesthetics
                         are dominating the independent watch market and how to spot a genuine tribute from a simple
                         copy.</p>
                     <a href="#"
@@ -182,18 +184,18 @@
     <section class="py-24 border-y border-white/5 bg-secondary-fixed">
         <div class="container mx-auto px-6 text-center text-black dark:text-white">
             <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-12">Topics of Interest</h2>
-            <div class="flex flex-wrap justify-center gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
                 <a href="#"
-                    class="w-full max-w-[280px] py-5 border border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Mechanical
+                    class="w-full py-5 border border-black/5 dark:border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Mechanical
                     Guides</a>
                 <a href="#"
-                    class="w-full max-w-[280px] py-5 border border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Microbrand
+                    class="w-full py-5 border border-black/5 dark:border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Microbrand
                     History</a>
                 <a href="#"
-                    class="w-full max-w-[280px] py-5 border border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Atelier
+                    class="w-full py-5 border border-black/5 dark:border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Atelier
                     Services</a>
                 <a href="#"
-                    class="w-full max-w-[280px] py-5 border border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Market
+                    class="w-full py-5 border border-black/5 dark:border-white/10 hover:border-primary transition-all uppercase tracking-widest text-[10px] font-bold bg-white/5 flex justify-center items-center">Market
                     Analysis</a>
             </div>
         </div>
@@ -204,7 +206,7 @@
         <div class="container mx-auto px-6 text-center text-black dark:text-white fade-in">
             <h3 class="text-4xl font-bold mb-8 uppercase tracking-tighter leading-tight">BE THE FIRST TO <br>READ THE
                 STORY.</h3>
-            <p class="opacity-50 text-lg mb-10 max-w-xl mx-auto italic leading-relaxed font-light">"In horology,
+            <p class="opacity-80 text-lg mb-10 max-w-xl mx-auto italic leading-relaxed font-light">"In horology,
                 knowledge is the only component that never goes out of style."</p>
             <form class="max-w-md mx-auto flex">
                 <input type="email" placeholder="Email Address" required
@@ -295,7 +297,7 @@
 
             <!-- Bottom Footer -->
             <div
-                class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-40 text-xs tracking-widest uppercase">
+                class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-70 text-xs tracking-widest uppercase">
                 <p>&copy; 2026 ChronoX Horology. All Rights Reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="hover:text-primary transition-all">Privacy Policy</a>

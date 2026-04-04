@@ -30,9 +30,9 @@
             </a>
             <div class="hidden xl:flex items-center space-x-8">
                 <a href="index.html" class="nav-link">Home 1</a>
+                <a href="about.html" class="nav-link active">About</a>
                 <a href="home-2.html" class="nav-link">Home 2</a>
                 <a href="shop.html" class="nav-link">Shop</a>
-                <a href="about.html" class="nav-link active">About</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
@@ -64,9 +64,9 @@
         </div>
         <div class="flex flex-col space-y-6 text-xl text-white">
             <a href="index.html" class="hover:text-primary transition-colors">Home 1</a>
+            <a href="about.html" class="text-primary font-bold">About</a>
             <a href="home-2.html" class="hover:text-primary transition-colors">Home 2</a>
             <a href="shop.html" class="hover:text-primary transition-colors">Shop</a>
-            <a href="about.html" class="text-primary font-bold">About</a>
             <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
             <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
         </div>
@@ -74,22 +74,23 @@
             <div class="flex items-center space-x-6 text-white mb-6">
                 <button id="rtl-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
                 <button id="theme-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
+                <button id="cart-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Cart</button>
             </div>
             <a href="login.html" class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
         </div>
     </div>
 
     <!-- Section 1: The Manifesto Header -->
-    <section class="h-[70vh] relative flex items-center overflow-hidden">
+    <section class="min-h-[70vh] py-32 relative flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.pexels.com/photos/9978716/pexels-photo-9978716.jpeg" alt="Atelier" class="w-full h-full object-cover grayscale">
             <div class="absolute inset-0 bg-black/30 dark:bg-black/70 transition-colors duration-500"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10 dark:text-white text-center">
+        <div class="container mx-auto px-6 relative z-10 text-white text-center">
             <div class="max-w-4xl mx-auto fade-in flex flex-col items-center">
                 <h2 class="text-sm uppercase tracking-[0.6em] text-primary mb-6">Our Commitment</h2>
                 <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tighter uppercase leading-none">THE <span class="text-primary italic">MANIFESTO.</span></h1>
-                <p class="text-xl md:text-2xl opacity-60 leading-relaxed max-w-2xl mx-auto font-light italic">
+                <p class="text-xl md:text-2xl opacity-90 leading-relaxed max-w-2xl mx-auto font-light italic">
                     "ChronoX was born from a simple observation: the world's most interesting watches aren't made by conglomerates, but by independent visionaries who dare to experiment with mechanical art."
                 </p>
             </div>
@@ -131,20 +132,20 @@
             <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-8">Our Standards</h2>
             <h3 class="text-5xl font-bold tracking-tighter mb-12 uppercase leading-none">THE CODE OF <span class="text-primary italic">PRECISION.</span></h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 justify-center">
-                <div class="p-10 md:p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 text-center flex flex-col items-center">
+                <div class="p-10 md:p-12 border border-black/5 dark:border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 text-center flex flex-col items-center h-full">
                     <div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary group-hover:text-white mb-8 text-xs font-bold font-mono">01</div>
                     <h4 class="text-xl font-bold mb-4 uppercase tracking-widest group-hover:text-white transition-colors duration-300">Transparency</h4>
-                    <p class="text-xs opacity-50 leading-relaxed group-hover:text-white group-hover:opacity-100 font-light max-w-xs mx-auto transition-all duration-300">We provide full technical breakdowns for every piece we list. Know your movement origins and manufacturing ethics.</p>
+                    <p class="text-xs opacity-80 leading-relaxed group-hover:text-white group-hover:opacity-100 font-light max-w-xs mx-auto transition-all duration-300">We provide full technical breakdowns for every piece we list. Know your movement origins and manufacturing ethics.</p>
                 </div>
-                <div class="p-10 md:p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 text-center flex flex-col items-center">
+                <div class="p-10 md:p-12 border border-black/5 dark:border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 text-center flex flex-col items-center h-full">
                     <div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary group-hover:text-white mb-8 text-xs font-bold font-mono">02</div>
                     <h4 class="text-xl font-bold mb-4 uppercase tracking-widest group-hover:text-white transition-colors duration-300">Curation</h4>
-                    <p class="text-xs opacity-50 leading-relaxed group-hover:text-white group-hover:opacity-100 font-light max-w-xs mx-auto transition-all duration-300">Every piece is handpicked by our expert horologists. We don't stock generic inventory; we curate mechanical art.</p>
+                    <p class="text-xs opacity-80 leading-relaxed group-hover:text-white group-hover:opacity-100 font-light max-w-xs mx-auto transition-all duration-300">Every piece is handpicked by our expert horologists. We don't stock generic inventory; we curate mechanical art.</p>
                 </div>
-                <div class="p-10 md:p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 text-center flex flex-col items-center col-span-1 md:col-span-2 lg:col-span-1 max-w-lg mx-auto lg:max-w-none">
+                <div class="p-10 md:p-12 border border-black/5 dark:border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 text-center flex flex-col items-center h-full">
                     <div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary group-hover:text-white mb-8 text-xs font-bold font-mono">03</div>
                     <h4 class="text-xl font-bold mb-4 uppercase tracking-widest group-hover:text-white transition-colors duration-300">Service</h4>
-                    <p class="text-xs opacity-50 leading-relaxed group-hover:text-white group-hover:opacity-100 font-light max-w-xs mx-auto transition-all duration-300">Mechanical watches are meant to outlive us. We provide the service network to make that a lifelong reality for our members.</p>
+                    <p class="text-xs opacity-80 leading-relaxed group-hover:text-white group-hover:opacity-100 font-light max-w-xs mx-auto transition-all duration-300">Mechanical watches are meant to outlive us. We provide the service network to make that a lifelong reality for our members.</p>
                 </div>
             </div>
         </div>
@@ -160,7 +161,7 @@
                 <div class="w-full lg:w-1/2 fade-in flex flex-col items-center lg:items-start text-center lg:text-left text-black dark:text-white">
                     <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-6">Work with us</h2>
                     <h3 class="text-5xl font-bold mb-8 tracking-tighter leading-tight uppercase">JOIN THE <span class="text-primary italic">REVOLUTION.</span></h3>
-                    <p class="opacity-60 leading-relaxed mb-10 text-lg font-light max-w-xl">
+                    <p class="opacity-80 leading-relaxed mb-10 text-lg font-light max-w-xl">
                         Are you an independent maker or microbrand owner? We are always looking for the next piece of mechanical art to add to our gallery. Let's build the future of horology together in a decentralized marketplace.
                     </p>
                     <a href="contact.html" class="btn-premium px-12 py-6 bg-primary text-white font-bold uppercase tracking-widest text-sm inline-block shadow-2xl">Submit Your Brand</a>
@@ -233,7 +234,7 @@
             </div>
 
             <!-- Bottom Footer -->
-            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-40 text-xs tracking-widest uppercase">
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center opacity-70 text-xs tracking-widest uppercase">
                 <p>&copy; 2026 ChronoX Horology. All Rights Reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="hover:text-primary transition-all">Privacy Policy</a>

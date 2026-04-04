@@ -109,6 +109,13 @@ document.addEventListener('DOMContentLoaded', () => {
             cartDrawer.classList.add('open');
         });
     }
+    const cartToggleMobile = document.getElementById('cart-toggle-mobile');
+    if (cartToggleMobile) {
+        cartToggleMobile.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            cartDrawer.classList.add('open');
+        });
+    }
     if (cartClose) {
         cartClose.addEventListener('click', () => {
             cartDrawer.classList.remove('open');
