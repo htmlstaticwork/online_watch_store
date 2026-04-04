@@ -17,53 +17,49 @@
         }
     </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body class="dark transition-colors duration-300">
 
-    <!-- Utility Bar -->
-    <div class="fixed top-8 right-8 z-50 flex items-center gap-6 text-secondary/40 dark:text-white/40">
-        <button id="rtl-toggle" class="hover:text-primary transition-colors text-xs font-bold tracking-widest px-4">RTL</button>
-        <button id="theme-toggle" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"></button>
-    </div>
 
-    <div class="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-[#080808] transition-colors duration-300 p-8">
+    <div class="min-h-screen flex flex-col items-center justify-center pt-24 md:pt-0 bg-white dark:bg-[#080808] transition-colors duration-300 p-8">
         <div class="w-full max-w-md fade-in bg-white dark:bg-secondary/30 border border-black/5 dark:border-white/10 p-8 md:p-16 shadow-2xl rounded-sm">
             <a href="index.html" class="flex items-center justify-center gap-4 mb-12 hover:scale-105 transition-transform group">
                 <img src="images/logo.png" alt="ChronoX Logo" class="h-12 w-auto object-contain">
                 <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
             </a>
-            <h2 class="text-3xl font-bold mb-4 tracking-tight dark:text-white uppercase tracking-widest leading-tight text-center">Create Membership</h2>
-            <p class="text-[10px] opacity-60 mb-10 tracking-[0.2em] uppercase dark:text-white/60 text-center">Join our community of collectors</p>
+            <h2 class="text-3xl font-bold mb-4 tracking-tight text-secondary dark:text-white uppercase tracking-widest leading-tight text-center">Create Membership</h2>
+            <p class="text-[10px] mb-10 tracking-[0.2em] uppercase text-secondary/60 dark:text-white/60 text-center">Join our community of collectors</p>
             
             <form class="space-y-6 text-left">
                 <div class="flex flex-col space-y-2">
-                    <label class="text-[10px] uppercase tracking-widest opacity-40 font-bold dark:text-white/40">First Name</label>
-                    <input type="text" required placeholder="Leo" class="bg-transparent border-b border-black/10 dark:border-white/10 py-3 focus:outline-none focus:border-primary transition-all dark:text-white">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-secondary dark:text-white/80">First Name</label>
+                    <input type="text" required placeholder="Leo" class="bg-transparent border-b border-secondary/20 dark:border-white/20 py-3 focus:outline-none focus:border-primary transition-all text-secondary dark:text-white placeholder-secondary/30 dark:placeholder-white/30">
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <label class="text-[10px] uppercase tracking-widest opacity-40 font-bold dark:text-white/40">Last Name</label>
-                    <input type="text" required placeholder="Thorne" class="bg-transparent border-b border-black/10 dark:border-white/10 py-3 focus:outline-none focus:border-primary transition-all dark:text-white">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-secondary dark:text-white/80">Last Name</label>
+                    <input type="text" required placeholder="Thorne" class="bg-transparent border-b border-secondary/20 dark:border-white/20 py-3 focus:outline-none focus:border-primary transition-all text-secondary dark:text-white placeholder-secondary/30 dark:placeholder-white/30">
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <label class="text-[10px] uppercase tracking-widest opacity-40 font-bold dark:text-white/40">Email Address</label>
-                    <input type="email" required placeholder="leo@example.com" class="bg-transparent border-b border-black/10 dark:border-white/10 py-3 focus:outline-none focus:border-primary transition-all dark:text-white">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-secondary dark:text-white/80">Email Address</label>
+                    <input type="email" required placeholder="leo@example.com" class="bg-transparent border-b border-secondary/20 dark:border-white/20 py-3 focus:outline-none focus:border-primary transition-all text-secondary dark:text-white placeholder-secondary/30 dark:placeholder-white/30">
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <label class="text-[10px] uppercase tracking-widest opacity-40 font-bold dark:text-white/40">New Password</label>
-                    <input type="password" required placeholder="********" class="bg-transparent border-b border-black/10 dark:border-white/10 py-3 focus:outline-none focus:border-primary transition-all dark:text-white">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-secondary dark:text-white/80">New Password</label>
+                    <input type="password" required placeholder="********" class="bg-transparent border-b border-secondary/20 dark:border-white/20 py-3 focus:outline-none focus:border-primary transition-all text-secondary dark:text-white placeholder-secondary/30 dark:placeholder-white/30">
                 </div>
                 <div class="flex flex-col space-y-2">
-                    <label class="text-[10px] uppercase tracking-widest opacity-40 font-bold dark:text-white/40">Confirm Password</label>
-                    <input type="password" required placeholder="********" class="bg-transparent border-b border-black/10 dark:border-white/10 py-3 focus:outline-none focus:border-primary transition-all dark:text-white">
+                    <label class="text-[10px] uppercase tracking-widest font-bold text-secondary dark:text-white/80">Confirm Password</label>
+                    <input type="password" required placeholder="********" class="bg-transparent border-b border-secondary/20 dark:border-white/20 py-3 focus:outline-none focus:border-primary transition-all text-secondary dark:text-white placeholder-secondary/30 dark:placeholder-white/30">
                 </div>
-                <div class="flex items-center text-[10px] opacity-40 uppercase tracking-widest font-bold pt-4 dark:text-white/40">
+                <div class="flex items-center text-[10px] uppercase tracking-widest font-bold pt-4 text-secondary/70 dark:text-white/70">
                     <label class="flex items-center cursor-pointer hover:opacity-100 transition-all">
-                        <input type="checkbox" required class="mr-2"> I agree to the <a href="#" class="text-primary font-bold ml-1">Terms of Service</a>
+                        <input type="checkbox" required class="mr-2"> I agree to the <a href="#" class="text-primary font-bold ml-1 hover:underline transition-all">Terms of Service</a>
                     </label>
                 </div>
                 <button type="submit" class="btn-premium bg-primary text-white w-full py-5 font-bold uppercase tracking-[0.3em] text-xs shadow-xl mt-8">Apply for Membership</button>
                 
-                <p class="text-[10px] text-center opacity-40 uppercase tracking-widest mt-10 dark:text-white/40">Existing Collector? <a href="login.html" class="text-primary font-bold ml-2">Login Here</a></p>
+                <p class="text-[10px] text-center uppercase tracking-widest mt-10 text-secondary/60 dark:text-white/60">Existing Collector? <a href="login.html" class="text-primary font-bold ml-2 hover:underline hover:opacity-100 transition-all">Login Here</a></p>
             </form>
         </div>
     </div>

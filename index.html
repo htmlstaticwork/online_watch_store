@@ -24,6 +24,7 @@
         }
     </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body class="dark transition-colors duration-300">
@@ -37,7 +38,7 @@
             </a>
 
             <!-- Desktop Nav -->
-            <div class="hidden xl:flex items-center space-x-8">
+            <div class="hidden xl:flex items-center gap-8">
                 <a href="index.html" class="nav-link active">Home 1</a>
                 <a href="home-2.html" class="nav-link">Home 2</a>
                 <a href="shop.html" class="nav-link">Shop</a>
@@ -73,9 +74,12 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[110] bg-secondary flex flex-col p-8 xl:hidden">
-        <div class="flex justify-between items-center mb-12">
-            <span class="text-2xl font-bold text-primary">CHRONOX</span>
+    <div id="mobile-menu" class="fixed inset-0 z-[110] bg-secondary flex flex-col p-8 xl:hidden overflow-y-auto">
+        <div class="flex justify-between items-center mb-12 text-white">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <img src="images/logo.png" alt="ChronoX Logo" class="h-10 w-auto object-contain">
+                <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
+            </a>
             <button id="mobile-menu-close" class="p-2 text-primary">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -83,45 +87,44 @@
                 </svg>
             </button>
         </div>
-        <div class="flex flex-col space-y-6 text-xl text-white">
-            <a href="index.html" class="hover:text-primary">Home 1</a>
-            <a href="home-2.html" class="hover:text-primary">Home 2</a>
-            <a href="shop.html" class="hover:text-primary">Shop</a>
-            <a href="about.html" class="hover:text-primary">About</a>
-            <a href="blog.html" class="hover:text-primary">Blog</a>
-            <a href="contact.html" class="hover:text-primary">Contact</a>
+        <div class="flex flex-col space-y-4 text-xl text-white">
+            <a href="index.html" class="text-primary font-bold">Home 1</a>
+            <a href="home-2.html" class="hover:text-primary transition-colors">Home 2</a>
+            <a href="shop.html" class="hover:text-primary transition-colors">Shop</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About</a>
+            <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
         </div>
-        <div class="mt-auto flex flex-col space-y-4">
-            <div class="flex items-center space-x-6 text-white">
-                <button id="rtl-toggle-mobile" class="text-sm font-bold opacity-70">RTL</button>
-                <button id="theme-toggle-mobile" class="text-sm font-bold opacity-70">THEME</button>
+        <div class="mt-8 pt-8 border-t border-white/5 flex flex-col space-y-4">
+            <div class="flex items-center space-x-6 text-white mb-6">
+                <button id="rtl-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
+                <button id="theme-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
             </div>
-            <a href="login.html"
-                class="w-full py-4 text-center border border-primary text-primary uppercase font-bold tracking-widest">Login</a>
+            <a href="login.html" class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
         </div>
     </div>
 
     <!-- Section 1: Discovery Hero -->
     <section class="h-screen relative flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/hero.png" alt="Luxury Watch" class="w-full h-full object-cover">
+            <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Luxury Watch" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/40 dark:bg-black/60"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent h-60"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10 dark:text-white pt-32">
-            <div class="max-w-3xl fade-in">
+        <div class="container mx-auto px-6 relative z-10 dark:text-white pt-32 text-center">
+            <div class="max-w-3xl mx-auto fade-in">
                 <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter uppercase leading-tight italic">THE
                     FUTURE OF <br><span class="text-primary not-italic">TIME.</span></h1>
-                <p class="text-lg md:text-xl mb-12 opacity-80 dark:opacity-60 leading-relaxed max-w-xl font-light">
+                <p class="text-lg md:text-xl mb-12 opacity-80 dark:opacity-60 leading-relaxed max-w-xl mx-auto font-light">
                     Welcome to ChronoX. We bridge the gap between traditional Swiss precision and the innovative soul of
                     the modern microbrand revolution.
                 </p>
-                <div class="flex flex-wrap gap-6">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                     <a href="shop.html"
-                        class="btn-premium px-10 py-5 bg-primary text-white font-bold uppercase tracking-widest text-sm shadow-xl">Start
+                        class="btn-premium w-full md:w-auto px-10 py-5 bg-primary text-white font-bold uppercase tracking-widest text-sm shadow-xl text-center">Start
                         Exploring</a>
                     <a href="about.html"
-                        class="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all">Atelier
+                        class="w-full md:w-auto px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all text-center">Atelier
                         Story</a>
                 </div>
             </div>
@@ -131,13 +134,13 @@
     <!-- Section 2: Artisanal Best Sellers -->
     <section class="py-24 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 fade-in">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 fade-in text-center md:text-left text-white">
                 <div>
                     <h2 class="text-sm uppercase tracking-[0.3em] text-primary mb-4">Curated Artisans</h2>
-                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight">The Best Sellers</h3>
+                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-white">The Best Sellers</h3>
                 </div>
                 <a href="shop.html"
-                    class="mt-8 md:mt-0 text-primary border-b border-primary py-2 font-bold uppercase tracking-widest text-xs">View
+                    class="mt-8 md:mt-0 text-primary border-b border-primary py-2 font-bold uppercase tracking-widest text-xs hover:text-white hover:border-white transition-all duration-300">View
                     Entire Atelier</a>
             </div>
 
@@ -262,12 +265,12 @@
                 <!-- Card 1: Calibration -->
                 <div class="relative group h-[400px] overflow-hidden fade-in bg-white/5 border border-white/5">
                     <img src="https://images.pexels.com/photos/29268644/pexels-photo-29268644.jpeg" alt="Calibration"
-                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-10 text-white">
                         <span class="text-primary text-2xl font-light italic block mb-4">P1.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Calibration</h4>
-                        <p class="opacity-60 text-xs leading-relaxed max-w-xs">Every movement is individually calibrated
+                        <p class="opacity-90 text-xs leading-relaxed max-w-xs">Every movement is individually calibrated
                             beyond standards before transit to ensure absolute chronometric precision.</p>
                     </div>
                 </div>
@@ -276,12 +279,12 @@
                 <div class="relative group h-[400px] overflow-hidden fade-in bg-white/5 border border-white/5"
                     style="transition-delay: 0.1s;">
                     <img src="https://images.pexels.com/photos/35989303/pexels-photo-35989303.jpeg" alt="Resilience"
-                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-10 text-white">
                         <span class="text-primary text-2xl font-light italic block mb-4">P2.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Resilience</h4>
-                        <p class="opacity-60 text-xs leading-relaxed max-w-xs">Aerospatial-grade materials (Grade 5
+                        <p class="opacity-90 text-xs leading-relaxed max-w-xs">Aerospatial-grade materials (Grade 5
                             Titanium and Forged Carbon) to ensure survivability in all extreme environments.</p>
                     </div>
                 </div>
@@ -290,13 +293,13 @@
                 <div class="relative group h-[400px] overflow-hidden fade-in bg-white/5 border border-white/5"
                     style="transition-delay: 0.2s;">
                     <img src="https://images.pexels.com/photos/36845965/pexels-photo-36845965.jpeg" alt="Visibility"
-                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                         style="object-position: center bottom;">
-                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-10 text-white">
                         <span class="text-primary text-2xl font-light italic block mb-4">P3.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Visibility</h4>
-                        <p class="opacity-60 text-xs leading-relaxed max-w-xs">Dual-layered high-grade Swiss
+                        <p class="opacity-90 text-xs leading-relaxed max-w-xs">Dual-layered high-grade Swiss
                             Super-LumiNova® application for maximum legibility in zero-light conditions.</p>
                     </div>
                 </div>
@@ -305,13 +308,13 @@
                 <div class="relative group h-[400px] overflow-hidden fade-in bg-white/5 border border-white/5"
                     style="transition-delay: 0.3s;">
                     <img src="https://images.pexels.com/photos/18597524/pexels-photo-18597524.jpeg" alt="Integrity"
-                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                         style="object-position: left;">
-                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-10 text-white">
                         <span class="text-primary text-2xl font-light italic block mb-4">P4.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Integrity</h4>
-                        <p class="opacity-60 text-xs leading-relaxed max-w-xs">Full transparency regarding component
+                        <p class="opacity-90 text-xs leading-relaxed max-w-xs">Full transparency regarding component
                             sourcing and atelier origin, ensuring ethical and honest horology.</p>
                     </div>
                 </div>
@@ -320,13 +323,13 @@
                 <div class="relative group h-[400px] overflow-hidden fade-in bg-white/5 border border-white/5"
                     style="transition-delay: 0.4s;">
                     <img src="images/hero.png" alt="Innovation"
-                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                         style="object-position: top;">
-                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-10 text-white">
                         <span class="text-primary text-2xl font-light italic block mb-4">P5.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Innovation</h4>
-                        <p class="opacity-60 text-xs leading-relaxed max-w-xs">Continuous experimentation with
+                        <p class="opacity-90 text-xs leading-relaxed max-w-xs">Continuous experimentation with
                             avant-garde case geometries and high-frequency mechanical complications.</p>
                     </div>
                 </div>
@@ -335,13 +338,13 @@
                 <div class="relative group h-[400px] overflow-hidden fade-in bg-white/5 border border-white/5"
                     style="transition-delay: 0.5s;">
                     <img src="https://images.pexels.com/photos/34371258/pexels-photo-34371258.jpeg" alt="Sustainability"
-                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                        class="absolute inset-0 w-full h-full object-cover grayscale opacity-20 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                         style="object-position: right;">
-                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-10 text-white">
                         <span class="text-primary text-2xl font-light italic block mb-4">P6.</span>
                         <h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Sustainability</h4>
-                        <p class="opacity-60 text-xs leading-relaxed max-w-xs">Ethical component sourcing and lifetime
+                        <p class="opacity-90 text-xs leading-relaxed max-w-xs">Ethical component sourcing and lifetime
                             serviceability protocols designed for generational legacy and minimal impact.</p>
                     </div>
                 </div>
@@ -356,15 +359,15 @@
                 <div class="w-full lg:w-1/2 fade-in">
                     <img src="images/hero.png" alt="Ethos" class="w-full grayscale border border-white/5 shadow-2xl">
                 </div>
-                <div class="w-full lg:w-1/2 fade-in dark:text-white">
+                <div class="w-full lg:w-1/2 fade-in dark:text-white text-center lg:text-left mt-12 lg:mt-0">
                     <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-6">Our DNA</h2>
                     <h3 class="text-4xl md:text-5xl font-bold mb-8 tracking-tighter leading-tight">THE ART OF
                         INDEPENDENT <span class="text-primary">THINKING.</span></h3>
-                    <p class="text-lg opacity-60 dark:opacity-60 leading-relaxed mb-10">
+                    <p class="text-lg opacity-60 dark:opacity-60 leading-relaxed mb-10 mx-auto lg:mx-0 max-w-xl">
                         ChronoX represents a community of thinkers who value architectural design over branding. We
                         partner with the boldest makers to ensure that your wrist tells a story that is uniquely yours.
                     </p>
-                    <div class="grid grid-cols-2 gap-8 border-t border-white/5 pt-8">
+                    <div class="grid grid-cols-2 gap-8 border-t border-white/5 pt-8 max-w-sm mx-auto lg:mx-0">
                         <div>
                             <span class="text-2xl font-bold text-primary block mb-1">100+</span>
                             <span class="text-[10px] uppercase tracking-widest opacity-40">Unique Designs</span>
@@ -416,7 +419,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
                 <div class="fade-in">
-                    <a href="index.html" class="text-2xl font-bold text-primary mb-8 block">CHRONOX</a>
+                    <a href="index.html" class="flex items-center gap-4 mb-8 group">
+                        <img src="images/logo.png" alt="ChronoX Logo" class="h-10 w-auto object-contain">
+                        <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
+                    </a>
                     <p class="opacity-60 mb-8 leading-relaxed">
                         ChronoX is a curated marketplace for the world's most exceptional microbrand watches. Luxury
                         within reach.

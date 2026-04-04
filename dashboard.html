@@ -17,6 +17,7 @@
         }
     </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body class="dark transition-colors duration-300">
 
@@ -53,18 +54,29 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 z-[110] bg-secondary flex flex-col p-8 xl:hidden">
         <div class="flex justify-between items-center mb-12">
-            <span class="text-2xl font-bold text-primary">CHRONOX</span>
+            <a href="index.html" class="flex items-center gap-4 group">
+                <img src="images/logo.png" alt="ChronoX Logo" class="h-10 w-auto object-contain">
+                <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
+            </a>
             <button id="mobile-menu-close" class="p-2 text-primary">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
         </div>
-        <div class="flex flex-col space-y-6 text-xl dark:text-white">
-            <a href="index.html">Home 1</a>
-            <a href="home-2.html">Home 2</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+        <div class="flex flex-col space-y-6 text-xl text-white">
+            <a href="index.html" class="hover:text-primary transition-colors">Home 1</a>
+            <a href="home-2.html" class="hover:text-primary transition-colors">Home 2</a>
+            <a href="shop.html" class="hover:text-primary transition-colors">Shop</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About</a>
+            <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
+            <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+        </div>
+        <div class="mt-auto flex flex-col space-y-4">
+            <div class="flex items-center space-x-6 text-white mb-6">
+                <button id="rtl-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
+                <button id="theme-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
+            </div>
+            <a href="dashboard.html" class="text-primary font-bold uppercase text-sm tracking-widest mb-4 block">Dashboard</a>
+            <a href="login.html" class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Logout</a>
         </div>
     </div>
 
@@ -73,9 +85,9 @@
     <!-- Section 1: Collector Profile -->
     <section class="pt-40 pb-20 bg-secondary/30">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12 text-white fade-in">
-                <div class="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-3xl">LT</div>
-                <div class="text-center md:text-left">
+            <div class="flex flex-col items-center gap-12 text-white fade-in text-center">
+                <div class="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-3xl mx-auto">LT</div>
+                <div class="max-w-2xl mx-auto">
                     <h1 class="text-4xl font-bold tracking-tight mb-2 uppercase">LEO THORNE</h1>
                     <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px]">Tier: Platinum Collector</span>
                     <div class="flex gap-8 mt-6 opacity-40 uppercase tracking-widest text-[10px]">
@@ -162,7 +174,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
                 <div class="fade-in">
-                    <a href="index.html" class="text-2xl font-bold text-primary mb-8 block">CHRONOX</a>
+                    <a href="index.html" class="flex items-center gap-4 mb-8 group">
+                        <img src="images/logo.png" alt="ChronoX Logo" class="h-10 w-auto object-contain">
+                        <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
+                    </a>
                     <p class="opacity-60 mb-8 leading-relaxed">
                         ChronoX is a curated marketplace for the world's most exceptional microbrand watches. Luxury within reach.
                     </p>

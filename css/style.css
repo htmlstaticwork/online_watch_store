@@ -147,9 +147,9 @@ header {
 }
 
 .light header {
-    background: rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    color: var(--secondary);
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 header.sticky {
@@ -162,6 +162,7 @@ header.sticky {
 
 .light header.sticky {
     background: rgba(255, 255, 255, 0.95) !important;
+    color: var(--secondary) !important;
 }
 
 /* Ensure nav items inherit color correctly */
@@ -223,15 +224,23 @@ header nav {
 /* Cart Drawer Animation */
 #cart-drawer {
     transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
     transition: var(--transition);
 }
 
 #cart-drawer.open {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
 }
 
 [dir="rtl"] #cart-drawer {
     transform: translateX(-100%);
+    right: auto;
+    left: 0;
+    border-left: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 [dir="rtl"] #cart-drawer.open {
@@ -312,11 +321,15 @@ header nav {
 /* Mobile Menu Animation */
 #mobile-menu {
     transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
     transition: var(--transition);
 }
 
 #mobile-menu.open {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
 }
 
 [dir="rtl"] #mobile-menu {
@@ -325,4 +338,41 @@ header nav {
 
 [dir="rtl"] #mobile-menu.open {
     transform: translateX(0);
+}
+/* Shop Sidebar Mobile Drawer */
+.shop-sidebar {
+    transform: translateX(-100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.shop-sidebar.active {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+@media (min-width: 1280px) {
+    .shop-sidebar {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+    }
+}
+
+[dir="rtl"] .shop-sidebar {
+    transform: translateX(100%);
+}
+
+[dir="rtl"] .shop-sidebar.active {
+    transform: translateX(0);
+}
+
+@media (min-width: 1280px) {
+    [dir="rtl"] .shop-sidebar {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+    }
 }

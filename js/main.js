@@ -33,32 +33,37 @@ document.addEventListener('DOMContentLoaded', () => {
     updateRTLText(savedRTL);
 
     // Theme Toggle Handler
-    if (themeBtn) {
-        themeBtn.addEventListener('click', () => {
-            const isDark = body.classList.contains('dark');
-            const targetTheme = isDark ? 'light' : 'dark';
-            const currentTheme = isDark ? 'dark' : 'light';
-            
-            body.classList.remove(currentTheme);
-            body.classList.add(targetTheme);
-            document.documentElement.classList.remove(currentTheme);
-            document.documentElement.classList.add(targetTheme);
-            
-            localStorage.setItem('theme', targetTheme);
-            updateThemeIcon(targetTheme);
-        });
-    }
+    const themeBtns = [document.getElementById('theme-toggle'), document.getElementById('theme-toggle-mobile')];
+    themeBtns.forEach(btn => {
+        if (btn) {
+            btn.addEventListener('click', () => {
+                const currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+                const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                document.documentElement.classList.remove(currentTheme);
+                document.documentElement.classList.add(targetTheme);
+                body.classList.remove(currentTheme);
+                body.classList.add(targetTheme);
+                
+                localStorage.setItem('theme', targetTheme);
+                themeBtns.forEach(b => updateThemeIcon(b, targetTheme));
+            });
+        }
+    });
 
     // RTL Toggle Handler
-    if (rtlBtn) {
-        rtlBtn.addEventListener('click', () => {
-            const currentDir = document.documentElement.getAttribute('dir');
-            const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
-            document.documentElement.setAttribute('dir', newDir);
-            localStorage.setItem('rtl', newDir === 'rtl');
-            updateRTLText(newDir === 'rtl');
-        });
-    }
+    const rtlBtns = [document.getElementById('rtl-toggle'), document.getElementById('rtl-toggle-mobile')];
+    rtlBtns.forEach(btn => {
+        if (btn) {
+            btn.addEventListener('click', () => {
+                const currentDir = document.documentElement.getAttribute('dir');
+                const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+                document.documentElement.setAttribute('dir', newDir);
+                localStorage.setItem('rtl', newDir === 'rtl');
+                rtlBtns.forEach(b => updateRTLText(b, newDir === 'rtl'));
+            });
+        }
+    });
 
     // Mobile Menu
     if (mobileMenuBtn && mobileMenu) {
@@ -228,16 +233,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Initial UI State Sync
+    themeBtns.forEach(btn => updateThemeIcon(btn, savedTheme));
+    rtlBtns.forEach(btn => updateRTLText(btn, savedRTL));
+
     // Private Functions
-    function updateThemeIcon(theme) {
-        if (!themeBtn) return;
-        themeBtn.innerHTML = theme === 'dark' 
+    function updateThemeIcon(btn, theme) {
+        if (!btn) return;
+        btn.innerHTML = theme === 'dark' 
             ? '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>' 
             : '<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>';
     }
 
-    function updateRTLText(isRTL) {
-        if (!rtlBtn) return;
-        rtlBtn.innerText = isRTL ? 'LTR' : 'RTL';
+    function updateRTLText(btn, isRTL) {
+        if (!btn) return;
+        btn.innerText = isRTL ? 'LTR' : 'RTL';
     }
 });
