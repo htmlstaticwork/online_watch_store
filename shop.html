@@ -44,7 +44,7 @@
     </style>
 </head>
 
-<body class="dark transition-colors duration-300">
+<body class="transition-colors duration-300">
 
     <!-- Header -->
     <header class="fixed top-0 w-full z-[100] transition-all duration-300">
@@ -55,8 +55,8 @@
             </a>
             <div class="hidden xl:flex items-center space-x-8">
                 <a href="index.html" class="nav-link">Home 1</a>
-                <a href="about.html" class="nav-link">About</a>
                 <a href="home-2.html" class="nav-link">Home 2</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="shop.html" class="nav-link active">Shop</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -100,43 +100,49 @@
         </div>
         <div class="flex flex-col space-y-6 text-xl text-white">
             <a href="index.html" class="hover:text-primary transition-colors">Home 1</a>
-            <a href="about.html" class="hover:text-primary transition-colors">About</a>
             <a href="home-2.html" class="hover:text-primary transition-colors">Home 2</a>
+            <a href="about.html" class="hover:text-primary transition-colors">About</a>
             <a href="shop.html" class="text-primary font-bold">Shop</a>
             <a href="blog.html" class="hover:text-primary transition-colors">Blog</a>
             <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
         </div>
         <div class="mt-auto flex flex-col space-y-4">
             <div class="flex items-center space-x-6 text-white mb-6">
-                <button id="rtl-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
-                <button id="theme-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
-                <button id="cart-toggle-mobile" class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Cart</button>
+                <button id="rtl-toggle-mobile"
+                    class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">RTL</button>
+                <button id="theme-toggle-mobile"
+                    class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Theme</button>
+                <button id="cart-toggle-mobile"
+                    class="text-xs font-bold opacity-70 hover:text-primary transition-colors uppercase tracking-widest">Cart</button>
             </div>
-            <a href="login.html" class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
+            <a href="login.html"
+                class="w-full py-4 text-center border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase text-sm font-bold tracking-widest">Login</a>
         </div>
     </div>
 
     <!-- Hero Segment -->
-    <section class="h-[60vh] relative flex items-center overflow-hidden border-b border-white/5 bg-secondary">
+    <section
+        class="h-[60vh] relative flex items-center overflow-hidden border-b border-black/5 dark:border-white/5 bg-white dark:bg-secondary">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.pexels.com/photos/9978716/pexels-photo-9978716.jpeg" alt="Shop Hero" class="w-full h-full object-cover opacity-80 dark:opacity-40">
-            <div class="absolute inset-0 bg-black/10 dark:bg-black/60 transition-colors duration-500"></div>
+            <img src="https://images.pexels.com/photos/9978716/pexels-photo-9978716.jpeg" alt="Shop Hero"
+                class="w-full h-full object-cover opacity-80 dark:opacity-40">
+            <div class="absolute inset-0 bg-black/60 transition-colors duration-500"></div>
             <div
                 class="absolute inset-0 bg-gradient-to-t from-[#080808] to-transparent h-40 bottom-0 top-auto dark:block hidden">
             </div>
             <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent h-60 dark:block hidden"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10 pt-32 dark:text-white">
-            <div class="max-w-2xl fade-in text-center mx-auto dark:text-white px-6">
-                <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight uppercase leading-none">The <span
+        <div class="container mx-auto px-6 relative z-10 pt-32 text-white">
+            <div class="max-w-2xl fade-in text-center mx-auto text-white px-6">
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight uppercase leading-none text-white">The <span
                         class="text-primary italic">Atelier</span></h1>
                 <p
-                    class="text-lg opacity-60 leading-relaxed mb-12 max-w-xl mx-auto uppercase tracking-widest text-xs font-bold">
+                    class="text-lg opacity-80 leading-relaxed mb-12 max-w-xl mx-auto uppercase tracking-widest text-xs font-bold text-white">
                     Curated Microbrand Masterpieces. Technical excellence meets independent design.
                 </p>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                     <span
-                        class="text-[10px] uppercase tracking-[0.4em] font-bold text-primary/60 border border-primary/20 px-6 py-2">Limited
+                        class="text-[10px] uppercase tracking-[0.4em] font-bold text-primary border border-primary/30 px-6 py-2">Limited
                         series available</span>
                 </div>
             </div>
@@ -144,36 +150,45 @@
     </section>
 
     <!-- Shop Tools & Filter Segment -->
-    <section class="py-16 bg-secondary">
+    <section class="py-16 bg-white dark:bg-secondary border-b border-black/5 dark:border-white/5">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 fade-in dark:text-white text-center md:text-left">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 fade-in text-black dark:text-white text-center md:text-left">
                 <div>
                     <h2 class="text-sm uppercase tracking-[0.4em] text-primary mb-2">Technical Registry</h2>
                     <p class="text-xs opacity-40 uppercase tracking-[0.2em] font-bold">Discover our current technical
                         selections.</p>
                 </div>
-                <div class="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-4 mt-8 md:mt-0 text-[10px] md:text-xs font-bold uppercase tracking-widest">
+                <div
+                    class="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-4 mt-8 md:mt-0 text-[10px] md:text-xs font-bold uppercase tracking-widest">
                     <span class="opacity-40">Filter by</span>
                     <button id="filter-toggle"
                         class="xl:hidden text-primary border border-primary/20 px-4 py-2 hover:bg-primary hover:text-white transition-all">Filter</button>
                     <select
                         class="bg-slate-100 dark:bg-white/5 border border-primary/30 focus:border-primary focus:outline-none py-3 px-6 cursor-pointer text-black dark:text-white transition-all duration-300 rounded-sm">
-                        <option value="all" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Latest Arrivals</option>
-                        <option value="price-asc" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Price (Low to High)</option>
-                        <option value="price-desc" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Price (High to Low)</option>
-                        <option value="vintage" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Legacy Pieces</option>
+                        <option value="all" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Latest
+                            Arrivals</option>
+                        <option value="price-asc" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Price
+                            (Low to High)</option>
+                        <option value="price-desc" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Price
+                            (High to Low)</option>
+                        <option value="vintage" class="bg-white text-black dark:bg-[#1a1a1a] dark:text-white">Legacy
+                            Pieces</option>
                     </select>
                 </div>
             </div>
 
             <div class="flex flex-col lg:flex-row gap-12">
                 <!-- Shop Sidebar (Filters) -->
-                <aside id="shop-sidebar" class="shop-sidebar hidden xl:block w-full xl:w-72 flex-shrink-0 space-y-12 bg-secondary xl:bg-transparent p-10 xl:p-0 fixed xl:relative inset-0 xl:inset-auto z-[120] xl:z-0 overflow-y-auto xl:overflow-visible transition-transform duration-500">
+                <aside id="shop-sidebar"
+                    class="shop-sidebar hidden xl:block w-full xl:w-72 flex-shrink-0 space-y-12 bg-secondary xl:bg-transparent p-10 xl:p-0 fixed xl:relative inset-0 xl:inset-auto z-[120] xl:z-0 overflow-y-auto xl:overflow-visible transition-transform duration-500">
                     <div class="flex justify-between items-center xl:hidden mb-12">
-                        <h3 class="text-2xl font-bold tracking-tighter uppercase">Filter <span class="text-primary italic">Registry</span></h3>
+                        <h3 class="text-2xl font-bold tracking-tighter uppercase">Filter <span
+                                class="text-primary italic">Registry</span></h3>
                         <button id="sidebar-close" class="p-2 text-primary">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         </button>
                     </div>
@@ -282,7 +297,8 @@
 
                 <!-- Product Grid -->
                 <div class="flex-1 overflow-hidden">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3 gap-10 dark:text-white">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3 gap-10 dark:text-white">
                         <!-- Piece 1-4 (Existing) -->
                         <div class="group fade-in card-hover">
                             <div class="img-zoom relative bg-white/5 aspect-[3/4] overflow-hidden mb-6">
@@ -307,7 +323,8 @@
                             <div class="flex flex-col 2xl:flex-row justify-between items-start 2xl:items-center gap-4">
                                 <div>
                                     <h4 class="text-xl font-bold mb-1 tracking-tighter">Ocean Diver X</h4>
-                                    <p class="text-[10px] opacity-40 uppercase tracking-widest font-bold">Limited Series / 050</p>
+                                    <p class="text-[10px] opacity-40 uppercase tracking-widest font-bold">Limited Series
+                                        / 050</p>
                                 </div>
                                 <span class="text-primary font-bold text-lg leading-none">$1,450.00</span>
                             </div>
@@ -461,17 +478,39 @@
                             </div>
                         </div>
 
-                        <!-- Piece 9 -->
-                        <div class="group fade-in card-hover">
+                        <div class="group fade-in card-hover" style="transition-delay: 0.1s;">
+                            <div class="img-zoom relative bg-white/5 aspect-[3/4] overflow-hidden mb-6">
+                                <img src="https://images.pexels.com/photos/33496220/pexels-photo-33496220.jpeg"
+                                    alt="Piece 9" class="w-full h-full object-cover">
+                                <div
+                                    class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center p-8 text-center space-y-6">
+                                    <button
+                                        class="add-to-cart bg-primary text-white py-4 px-8 text-[10px] font-bold tracking-[0.2em] transform translate-y-4 group-hover:translate-y-0 transition-all"
+                                        data-id="s9" data-name="GMT Master II" data-price="3500"
+                                        data-image="images/products.png">Acquire Piece</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-xl font-bold mb-1 tracking-tighter">GMT Master II</h4>
+                                    <p class="text-[10px] opacity-40 uppercase tracking-widest font-bold">Global Horizon
+                                    </p>
+                                </div>
+                                <span class="text-primary font-bold text-lg leading-none">$3,500.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Piece 10 -->
+                        <div class="group fade-in card-hover" style="transition-delay: 0.2s;">
                             <div class="img-zoom relative bg-white/5 aspect-[3/4] overflow-hidden mb-6">
                                 <img src="https://images.pexels.com/photos/9204686/pexels-photo-9204686.jpeg"
-                                    alt="Piece 9"
+                                    alt="Piece 10"
                                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-transform duration-700">
                                 <div
                                     class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center p-8 text-center space-y-6">
                                     <button
                                         class="add-to-cart bg-primary text-white py-4 px-8 text-[10px] font-bold tracking-[0.2em] transform translate-y-4 group-hover:translate-y-0 transition-all"
-                                        data-id="s9" data-name="Lunar GMT Series" data-price="3450"
+                                        data-id="s10" data-name="Lunar GMT Series" data-price="3450"
                                         data-image="https://images.pexels.com/photos/34031837/pexels-photo-34031837.jpeg">Acquire
                                         Piece</button>
                                 </div>
@@ -489,12 +528,19 @@
 
                     <!-- Pagination -->
                     <div class="mt-24 flex justify-center items-center space-x-12 fade-in">
-                        <a href="#" class="text-xs font-bold text-primary border-b border-primary pb-2 tracking-[0.2em]">01</a>
-                        <a href="#" class="text-xs font-bold text-white/60 hover:text-white transition-all tracking-[0.2em]">02</a>
-                        <a href="#" class="text-xs font-bold text-white/60 hover:text-white transition-all tracking-[0.2em]">03</a>
-                        <a href="#" class="text-xs font-bold text-white/80 hover:text-primary transition-all flex items-center gap-4 tracking-[0.2em] uppercase">
-                            Next Collection 
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <a href="#"
+                            class="text-xs font-bold text-primary border-b border-primary pb-2 tracking-[0.2em]">01</a>
+                        <a href="#"
+                            class="text-xs font-bold text-white/60 hover:text-white transition-all tracking-[0.2em]">02</a>
+                        <a href="#"
+                            class="text-xs font-bold text-white/60 hover:text-white transition-all tracking-[0.2em]">03</a>
+                        <a href="#"
+                            class="text-xs font-bold text-white/80 hover:text-primary transition-all flex items-center gap-4 tracking-[0.2em] uppercase">
+                            Next Collection
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -568,7 +614,7 @@
                     <p class="text-sm opacity-60 mb-6">Stay updated with our latest microbrand releases.</p>
                     <form class="flex">
                         <input type="email" placeholder="Email Address" required
-                            class="bg-white/5 border border-white/10 px-6 py-4 w-full text-sm focus:outline-none focus:border-primary transition-all rounded-l">
+                            class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 px-6 py-4 w-full text-sm focus:outline-none focus:border-primary transition-all rounded-l text-black dark:text-white">
                         <button type="submit"
                             class="bg-primary px-6 py-4 text-white hover:bg-accent transition-all rounded-r">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

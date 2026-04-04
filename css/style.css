@@ -47,7 +47,7 @@ body {
 /* Fix for adaptive background sections */
 .bg-secondary, .bg-secondary-fixed {
     transition: var(--transition);
-    background-color: #f1f1f1; /* Light gray for light mode */
+    background-color: #ffffff !important; /* Pure white for light mode */
     color: var(--text-light);
 }
 
