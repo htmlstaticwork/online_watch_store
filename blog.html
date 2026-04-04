@@ -51,7 +51,7 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-secondary flex flex-col p-8 xl:hidden">
+    <div id="mobile-menu" class="fixed inset-0 z-[110] bg-secondary flex flex-col p-8 xl:hidden">
         <div class="flex justify-between items-center mb-12">
             <span class="text-2xl font-bold text-primary">CHRONOX</span>
             <button id="mobile-menu-close" class="p-2 text-primary">
@@ -70,11 +70,11 @@
 
     <!-- Section 1: Journal Spotlight -->
     <section class="h-[60vh] relative flex items-center overflow-hidden">
-        <div class="absolute inset-0 z-0 text-white">
+        <div class="absolute inset-0 z-0">
             <img src="images/hero.png" alt="Journal" class="w-full h-full object-cover grayscale opacity-40">
-            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="absolute inset-0 bg-black/30 dark:bg-black/70 transition-colors duration-500"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10 text-white">
+        <div class="container mx-auto px-6 relative z-10 dark:text-white">
             <div class="max-w-2xl fade-in text-left">
                 <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">Featured Entry</span>
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tighter uppercase leading-tight">The Art of <br><span class="text-primary italic">Finishing.</span></h1>
@@ -87,9 +87,9 @@
     </section>
 
     <!-- Section 2: The Chronicled Stream -->
-    <section class="py-24 bg-[#0a0a0a]">
+    <section class="py-24 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 dark:text-white">
                 <article class="fade-in group">
                     <div class="img-zoom relative aspect-video overflow-hidden mb-6 bg-white/5">
                         <img src="images/products.png" alt="B1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-transform duration-700 group-hover:scale-110">
@@ -147,7 +147,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-white py-20 border-t border-white/5">
+    <footer class="bg-secondary dark:text-white py-20 border-t border-black/5 dark:border-white/5">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->

@@ -21,22 +21,19 @@
 <body class="dark transition-colors duration-300">
 
     <!-- Utility Bar -->
-    <div class="fixed top-8 right-8 z-50 flex items-center gap-6 text-white/40">
-        <button id="rtl-toggle" class="hover:text-primary transition-colors text-xs uppercase font-bold tracking-widest px-4">RTL</button>
-        <button id="theme-toggle" class="p-2 rounded-full hover:bg-white/10 transition-colors"></button>
-        <a href="index.html" class="p-2 hover:text-primary transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        </a>
+    <div class="fixed top-8 right-8 z-50 flex items-center gap-6 text-secondary/40 dark:text-white/40">
+        <button id="rtl-toggle" class="hover:text-primary transition-colors text-xs font-bold tracking-widest px-4">RTL</button>
+        <button id="theme-toggle" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"></button>
     </div>
 
     <div class="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-[#080808] transition-colors duration-300 p-8">
-        <div class="w-full max-w-sm fade-in text-center">
+        <div class="w-full max-w-md fade-in bg-white dark:bg-secondary/30 border border-black/5 dark:border-white/10 p-8 md:p-16 shadow-2xl rounded-sm">
             <a href="index.html" class="flex items-center justify-center gap-4 mb-12 hover:scale-105 transition-transform group">
                 <img src="images/logo.png" alt="ChronoX Logo" class="h-12 w-auto object-contain">
                 <span class="text-2xl font-bold tracking-tighter text-primary">CHRONOX</span>
             </a>
-            <h2 class="text-3xl font-bold mb-4 tracking-tight dark:text-white">Login</h2>
-            <p class="text-[10px] opacity-60 mb-12 tracking-[0.2em] uppercase dark:text-white/60">Enter your credentials below</p>
+            <h2 class="text-3xl font-bold mb-4 tracking-tight dark:text-white text-center">Login</h2>
+            <p class="text-[10px] opacity-60 mb-12 tracking-[0.2em] uppercase dark:text-white/60 text-center">Enter your credentials below</p>
             
             <form class="space-y-8 text-left">
                 <div class="flex flex-col space-y-2">
@@ -55,26 +52,6 @@
                 </div>
                 <button type="submit" class="btn-premium bg-primary text-white w-full py-5 font-bold uppercase tracking-[0.3em] text-xs shadow-xl mt-8">Proceed to Hall</button>
                 
-                <!-- Social Login -->
-                <div class="mt-10">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="h-[1px] bg-black/5 dark:bg-white/5 flex-grow"></div>
-                        <span class="text-[9px] uppercase tracking-[0.4em] opacity-40 font-bold whitespace-nowrap dark:text-white/40">Or Protocol via</span>
-                        <div class="h-[1px] bg-black/5 dark:bg-white/5 flex-grow"></div>
-                    </div>
-                    <div class="flex justify-center gap-6">
-                        <button type="button" class="group p-4 border border-black/5 dark:border-white/5 rounded-full hover:border-primary transition-all duration-300">
-                            <svg class="w-5 h-5 opacity-40 group-hover:opacity-100 group-hover:text-primary transition-all" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.92 3.32-2.12 4.4-1.32 1.32-3.32 2.6-6.48 2.6-5.12 0-9.28-4.12-9.28-9.28s4.16-9.28 9.28-9.28c2.8 0 4.92 1.08 6.64 2.72l2.36-2.36C18.6 1.04 15.68 0 12.48 0 5.8 0 0 5.8 0 12.48s5.8 12.48 12.48 12.48c3.56 0 6.64-1.16 8.88-3.4 2.32-2.32 3.12-5.56 3.12-8.32 0-.88-.08-1.6-.2-2.32H12.48z"/></svg>
-                        </button>
-                        <button type="button" class="group p-4 border border-black/5 dark:border-white/5 rounded-full hover:border-primary transition-all duration-300">
-                            <svg class="w-5 h-5 opacity-40 group-hover:opacity-100 group-hover:text-primary transition-all" fill="currentColor" viewBox="0 0 24 24"><path d="M17.05 20.28c-.96.95-2.06 1.92-3.37 1.92-1.27 0-1.68-.75-3.15-.75-1.47 0-1.92.73-3.15.73-1.27 0-2.46-1.02-3.41-1.93-1.96-1.89-3.43-5.32-3.43-8.33 0-2.98 1.9-4.57 3.73-4.57 1.15 0 2.05.65 2.82.65.68 0 1.76-.75 3.16-.75 1.09 0 2.4.45 3.32 1.48-2.31 1.3-1.93 4.88.58 6.03-1.05 2.45-2.14 4.54-3.1 5.47zM12.03 5.43c0-2.34 2.02-4.11 4.14-4.13.06 2.43-2.09 4.38-4.14 4.13z"/></svg>
-                        </button>
-                        <button type="button" class="group p-4 border border-black/5 dark:border-white/5 rounded-full hover:border-primary transition-all duration-300">
-                            <svg class="w-5 h-5 opacity-40 group-hover:opacity-100 group-hover:text-primary transition-all" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </button>
-                    </div>
-                </div>
-
                 <p class="text-[10px] text-center opacity-40 uppercase tracking-widest mt-12 dark:text-white/40">New to the family? <a href="signup.html" class="text-primary font-bold ml-2">Request Membership</a></p>
             </form>
         </div>

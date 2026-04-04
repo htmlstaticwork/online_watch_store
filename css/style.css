@@ -44,17 +44,32 @@ body {
     color: var(--text-dark);
 }
 
-/* Fix for dark-background sections in light mode */
+/* Fix for adaptive background sections */
 .bg-secondary, .bg-secondary-fixed {
+    transition: var(--transition);
+    background-color: #f1f1f1; /* Light gray for light mode */
+    color: var(--text-light);
+}
+
+.dark .bg-secondary, .dark .bg-secondary-fixed {
     background-color: var(--secondary) !important;
     color: white !important;
 }
 
 .bg-secondary h1, .bg-secondary h2, .bg-secondary h3, .bg-secondary h4, .bg-secondary-fixed h1 {
+    color: inherit;
+}
+
+.dark .bg-secondary h1, .dark .bg-secondary h2, .dark .bg-secondary h3, .dark .bg-secondary h4, .dark .bg-secondary-fixed h1 {
     color: white !important;
 }
 
 .bg-secondary p, .bg-secondary-fixed p {
+    color: inherit;
+    opacity: 0.6;
+}
+
+.dark .bg-secondary p, .dark .bg-secondary-fixed p {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 

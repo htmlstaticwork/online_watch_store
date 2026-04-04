@@ -72,12 +72,12 @@
     <section class="h-[60vh] relative flex items-center overflow-hidden border-b border-white/5">
         <div class="absolute inset-0 z-0">
             <img src="images/contact-hero.png" alt="Showroom Hero" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/70"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#080808] to-transparent h-40 bottom-0 top-auto"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent h-60"></div>
+            <div class="absolute inset-0 bg-black/30 dark:bg-black/70 transition-colors duration-500"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080808] to-transparent h-40 bottom-0 top-auto dark:block hidden"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent h-60 dark:block hidden"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10 pt-32">
-            <div class="max-w-2xl fade-in text-center mx-auto text-white">
+        <div class="container mx-auto px-6 relative z-10 pt-32 dark:text-white">
+            <div class="max-w-2xl fade-in text-center mx-auto dark:text-white px-6">
                 <span class="text-primary font-bold uppercase tracking-[0.4em] text-[10px] mb-6 block">Personal Support</span>
                 <h1 class="text-6xl md:text-7xl font-bold mb-6 tracking-tighter uppercase leading-none">AT YOUR <span class="text-primary italic">SERVICE.</span></h1>
                 <p class="text-lg opacity-60 leading-relaxed font-light">Whether you're seeking your first mechanical piece or expanding a legacy collection, our horologists are here to guide your journey.</p>
@@ -86,9 +86,9 @@
     </section>
 
     <!-- Section 2: Global Access Network -->
-    <section class="py-24 bg-[#0a0a0a]">
+    <section class="py-24 bg-secondary">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-white">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 dark:text-white">
                 <div class="p-12 border border-white/5 bg-white/5 group hover:bg-primary transition-all duration-500 fade-in">
                     <h4 class="text-primary font-bold uppercase tracking-widest text-[10px] mb-4 group-hover:text-white">Our Atelier</h4>
                     <p class="text-sm opacity-60 leading-relaxed mb-8 font-light group-hover:text-white/80">127 Shoreditch High St<br>London, E1 6JE<br>United Kingdom</p>
@@ -166,7 +166,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-white py-20 border-t border-white/5">
+    <footer class="bg-secondary dark:text-white py-20 border-t border-black/5 dark:border-white/5">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Brand -->
