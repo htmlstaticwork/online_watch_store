@@ -189,7 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
             cartItemsList.innerHTML = '<p class="text-[10px] opacity-40 uppercase tracking-[0.4em] text-center mt-20">Your collection is empty</p>';
         }
 
-        if (cartCount) cartCount.innerText = count;
+        const cartCounts = [document.getElementById('cart-count'), document.getElementById('cart-count-mobile')];
+        cartCounts.forEach(el => {
+            if (el) el.innerText = count;
+        });
         if (cartTotal) cartTotal.innerText = `$${total.toLocaleString()}`;
     }
 

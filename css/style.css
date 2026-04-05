@@ -318,12 +318,32 @@ header nav {
     visibility: visible;
 }
 
+/* Mobile Menu & Cart Drawer Theme Support */
+#mobile-menu, #cart-drawer {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.dark #mobile-menu, .dark #cart-drawer {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* Override fixed white text in mobile menu and cart for light mode */
+#mobile-menu .text-white, 
+#cart-drawer .text-white,
+#mobile-menu .text-white\/80,
+#cart-drawer .text-white\/80 {
+    color: inherit !important;
+}
+
 /* Mobile Menu Animation */
 #mobile-menu {
     transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
     transition: var(--transition);
+    z-index: 110;
 }
 
 #mobile-menu.open {
