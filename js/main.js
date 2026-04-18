@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="flex items-center justify-between mb-8 group border-b border-white/5 pb-4">
                     <div class="flex items-center">
                         <div class="w-16 h-20 bg-white/5 mr-6 overflow-hidden">
-                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover grayscale">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h5 class="text-[10px] font-bold uppercase tracking-[0.2em] mb-1">${item.name}</h5>
